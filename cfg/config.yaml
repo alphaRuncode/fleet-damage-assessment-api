@@ -1,0 +1,17 @@
+yolov8m:
+  inference_url: 'localhost:8001'
+  threshold: 0.2
+  max_detect: 300
+  img_res: 640
+  input_frmt: "FP32"
+  retina_mask: False
+  model_version: 1
+  labels_info: {0: ['taillight',[255, 0, 0]], 1: ['b_bumper',[0, 255, 0]], 2: ['trunk',[0, 0, 255]], 3: ['b_windsheild',[255, 255, 0]], 4: ['trunk_roof',[0, 255, 255]], 5: ['side_mirror',[255, 0, 255]], 6: ['roof',[255, 165, 0]], 7: ['roof_rail',[255, 105, 180]]}
+  opacity: 0.4
+  input_lyr_name: 'images'
+  output_lyt_name: ['output0','output1']
+
+
+pannel_resize: 1920
+dst_dir: './uploaded'
+weights_dir: './weights'
